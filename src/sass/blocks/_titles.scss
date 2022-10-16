@@ -1,0 +1,16 @@
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 80px;
+  line-height: 80px;
+  &_project {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  &_subtitle {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}

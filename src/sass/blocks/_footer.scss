@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 25px;
+  padding: 50px 0;
+  background-color: #f5f4f4;
+  &__grid {
+    display: grid;
+  }
+  &__contacts {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  &__subtitle {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__email {
+    display: block;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #000;
+  }
+  &__phone {
+    display: block;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #000;
+  }
+  &__credits {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  &__webstudio {
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #000;
+  }
+}

@@ -1,0 +1,21 @@
+.services {
+  margin-top: 50px;
+  padding: 25px 0;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+    &_item {
+      display: block;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 25px;
+      &:first-child {
+        margin-top: 100px;
+      }
+      &:not(:first-child) {
+        margin-top: 50px;
+      }
+    }
+  }
+}
