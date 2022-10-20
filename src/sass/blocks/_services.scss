@@ -1,6 +1,5 @@
 .services {
   margin-top: 50px;
-  padding: 25px 0;
   &__list {
     margin: 0;
     padding: 0;
@@ -12,9 +11,19 @@
       line-height: 25px;
       &:first-child {
         margin-top: 100px;
+        @media (max-width: 640px) {
+          margin-top: 50px;
+        }
       }
       &:not(:first-child) {
         margin-top: 50px;
+        @media (max-width: 640px) {
+          margin-top: 30px;
+        }
+      }
+      @media (max-width: 640px) {
+        font-size: 20px;
+        line-height: 20px;
       }
     }
   }

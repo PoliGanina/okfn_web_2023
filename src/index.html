@@ -5,101 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ganina Interiors</title>
+    <title>Polina Ganina - Frontend Developer</title>
+    <meta name="title" content="Natalia Ganina Interiors" />
+    <meta
+      name="description"
+      content="Интерьер для бизнеса и жизни, от бетонной коробки до утонченной отделки оселковым мрамором"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Natalia Ganina Interiors" />
+    <meta
+      property="og:description"
+      content="Интерьер для бизнеса и жизни, от бетонной коробки до утонченной отделки оселковым мрамором"
+    />
+    <meta property="og:image" content="hicons/favicon//favicon-96x96.png" />
+
+    <!-- Favicon  -->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="icons/favicon/apple-icon-57x57.png"
+      href="icons/favicon//apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="icons/favicon/apple-icon-60x60.png"
+      href="icons/favicon//apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="icons/favicon/apple-icon-72x72.png"
+      href="icons/favicon//apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="icons/favicon/apple-icon-76x76.png"
+      href="icons/favicon//apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="icons/favicon/apple-icon-114x114.png"
+      href="icons/favicon//apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="icons/favicon/apple-icon-120x120.png"
+      href="icons/favicon//apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="icons/favicon/apple-icon-144x144.png"
+      href="icons/favicon//apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="icons/favicon/apple-icon-152x152.png"
+      href="icons/favicon//apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="icons/favicon/apple-icon-180x180.png"
+      href="icons/favicon//apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="icons/favicon/android-icon-192x192.png"
+      href="icons/favicon//android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="icons/favicon/favicon-32x32.png"
+      href="icons/favicon//favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="icons/favicon/favicon-96x96.png"
+      href="icons/favicon//favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="icons/favicon/favicon-16x16.png"
+      href="icons/favicon//favicon-16x16.png"
     />
+    <link rel="manifest" href="icons/favicon//manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="icons/favicon//ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__menu">
-        <div class="container">
-          <nav class="header__nav">
-            <a class="header__logo" href="https://nataganina.ru/">
-              <img class="header__logo-image" src="icons/logo.svg" alt="logo" />
-            </a>
-            <ul class="header__nav-list">
-              <li><a class="header__nav-link" href="#">О СТУДИИ</a></li>
-              <li><a class="header__nav-link" href="#">ПРОЕКТЫ</a></li>
-              <li><a class="header__nav-link" href="#">УСЛУГИ</a></li>
-              <li><a class="header__nav-link" href="#">КОНТАКТЫ</a></li>
-            </ul>
-            <a class="btn btn_header" href="https://wa.me/79857201050">
-              Обсудить заказ
-            </a>
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo" href="https://nataganina.ru/">
+            <img class="header__logo-img" src="./icons/logo.svg" alt="logo" />
+          </a>
+          <ul class="header__menu">
+            <li><a class="header__menu-link" href="#">О СТУДИИ</a></li>
+            <li>
+              <a class="header__menu-link" href="./projects.html">ПРОЕКТЫ</a>
+            </li>
+            <li>
+              <a class="header__menu-link" href="./services.html">УСЛУГИ</a>
+            </li>
+            <li><a class="header__menu-link" href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <div class="header__triggers">
+            <button class="btn btn_header">
+              <a
+                class="btn__link"
+                target="_blank"
+                href="https://wa.me/79857201050"
+              >
+                Обсудить заказ
+              </a>
+            </button>
             <button class="hamburger hamburger--boring" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
             </button>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -189,32 +226,6 @@
           </div>
         </div>
       </section>
-      <section class="services">
-        <div class="container">
-          <h2 class="title">Услуги</h2>
-
-          <ul class="services___list">
-            <li class="services__list_item">
-              Экспертиза объекта перед покупкой с точки зрения возможности
-              перепланировки и соответствия потребностям покупателя.
-            </li>
-            <li class="services__list_item">
-              Независимая экспертиза вашего дизайн-проекта ( соответствие
-              заложенных решений строительным нормам и эргономике).
-            </li>
-            <li class="services__list_item">Планировочные решения.</li>
-            <li class="services__list_item">
-              Проектирование стадии А,АР, КР. электрика, трубные разводки.
-            </li>
-            <li class="services__list_item">Дизайн-проект.</li>
-            <li class="services__list_item">Визуализация.</li>
-            <li class="services__list_item">Декорирование.</li>
-            <li class="services__list_item">
-              Предпродажная подготовка объекта недвижимости.
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -224,18 +235,20 @@
             <a href="mailto:#" target="_blank" class="footer__email"
               >nataganina@gmail.com</a
             >
-            <a href="tel:+79857201050" target="_blank" class="footer__phone"
-              >+7 985 720 10 50</a
+            <a href="tel:+74997777777" target="_blank" class="footer__phone"
+              >+7 499 777 77 77</a
             >
           </div>
           <div class="footer__credits">
-            <a
-              class="btn btn_footer"
-              target="_blank"
-              href="https://wa.me/79857201050"
-            >
-              Обсудить заказ
-            </a>
+            <button class="btn btn_footer">
+              <a
+                class="btn__link"
+                target="_blank"
+                href="https://wa.me/79857201050"
+              >
+                Обсудить заказ
+              </a>
+            </button>
             <h2 class="footer__subtitle">SITE DESIGN</h2>
             <a
               href="https://t.me/PoliGanina"

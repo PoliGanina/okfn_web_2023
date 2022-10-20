@@ -1,6 +1,5 @@
 .projects {
   margin-top: 50px;
-  padding: 25px 0;
 
   &__grid {
     margin-top: 50px;
@@ -8,6 +7,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(300, auto);
     gap: 30px 30px;
+    @media (max-width: 1140px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 1140px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {

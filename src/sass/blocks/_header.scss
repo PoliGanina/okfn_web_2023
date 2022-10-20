@@ -1,30 +1,53 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  &__menu {
-    height: 180px;
-    background-color: #ffff;
-    z-index: 100;
-    &-short {
-      height: 80px;
-      background-color: #ffff;
-    }
+  position: absolute;
+  height: 160px;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  transition: all 0.5s;
+  @media (max-width: 1140px) {
+    height: 100px;
   }
+  // &_mobile {
+  //   height: 200px;
+  //   transition: all 0.5s;
+  // }
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 180px;
-    &-list {
-      margin-top: 20px;
-      list-style-type: none;
-      width: 400px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+    height: 100%;
+    @media (max-width: 1140px) {
+      height: 100px;
+    }
+  }
+  &__menu {
+    margin-top: 20px;
+    list-style-type: none;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    @media (max-width: 1140px) {
+      margin-top: 0;
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: #fff;
+      display: grid;
+      grid-template: 1fr 1fr/ 1fr 1fr;
+      padding: 0 44px 20px 44px;
+      grid-gap: 10px;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    &_mobile {
+      opacity: 1;
+      transform: translateY(0px);
     }
     &-link {
       position: relative;
@@ -35,6 +58,7 @@
       text-transform: uppercase;
       cursor: pointer;
       text-decoration: none;
+      color: #000;
       &:hover,
       &:active,
       &:visited {
@@ -60,12 +84,28 @@
       }
     }
   }
-  &__logo {
-    height: 60px;
-    &-short {
-      height: 60px;
+  &__triggers {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1140px) {
+      width: 200px;
     }
-    &-image {
+    @media (max-width: 640px) {
+      width: 30px;
+    }
+  }
+  &__logo {
+    height: 50px;
+    @media (max-width: 1140px) {
+      height: 40px;
+    }
+    @media (max-width: 640px) {
+      height: 27px;
+    }
+    &-img {
       height: 100%;
       width: 100%;
       object-fit: contain;
