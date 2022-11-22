@@ -1,7 +1,7 @@
-@import "libs/animate";
-@import "libs/slick";
+@import "libs/bootstrap-grid"; //for responsive containers
+@import "libs/bootstrap-reboot"; // to clean default brawser styles
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Miriam+Libre&display=swap");
 
 @import "base/variables";
 @import "base/general";
