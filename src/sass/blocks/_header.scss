@@ -2,57 +2,101 @@
   position: relative;
   height: 130px;
   padding-top: 15px;
-  &::after {
-    content: "";
-    background-image: url("../assets/circle-blue.png");
+  .circle-blue {
     position: absolute;
     right: 0;
-    top: 0;
-    height: 580px;
-    width: 605px;
+    top: -6px;
+    height: 405px;
+    width: 380px;
     z-index: -1;
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   &__nav {
+    padding-top: 32px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   &__menu {
-    margin-top: 20px;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 617px;
+    justify-content: space-between;
+    @media (max-width: 1199px) {
+      display: none;
+    }
     &-link {
-      position: relative;
       color: #000;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
       &:hover,
       &:active,
       &:visited {
         color: #000;
+        text-decoration: none;
       }
-      &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 0.5px;
-        bottom: 0;
-        left: 0;
-        background-color: #000;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s;
-      }
-      &:hover {
-        &:after {
-          transform-origin: bottom left;
-          transform: scaleX(1);
-        }
-      }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   margin-top: 20px;
+      //   width: 100%;
+      //   height: 0.5px;
+      //   bottom: 0;
+      //   left: 0;
+      //   background-color: #000;
+      //   transform: scaleX(0);
+      //   transform-origin: bottom right;
+      //   transition: transform 0.3s;
+      // }
+      // &:hover {
+      //   &:after {
+      //     margin-top: 5px;
+      //     transform-origin: bottom left;
+      //     transform: scaleX(1);
+      //   }
+      // }
     }
   }
   &__logo {
     height: 84px;
     width: 300px;
+    @media (max-width: 575px) {
+      height: calc(84px * 0.8);
+      width: calc(300px * 0.8);
+    }
     &-img {
       height: 100%;
       width: 100%;
+    }
+  }
+  &__additional {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 216px;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 136px;
+    &-link {
+      opacity: 100%;
+      &:hover {
+        opacity: 70%;
+      }
     }
   }
 }
