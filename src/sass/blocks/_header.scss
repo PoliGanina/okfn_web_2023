@@ -23,12 +23,12 @@
   }
   &__menu {
     list-style-type: none;
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 617px;
     justify-content: space-between;
-    @media (max-width: 1199px) {
-      display: none;
+    @media (min-width: 1200px) {
+      display: flex;
     }
     &-link {
       color: #000;
@@ -64,11 +64,11 @@
     }
   }
   &__logo {
-    height: 84px;
-    width: 300px;
-    @media (max-width: 575px) {
-      height: calc(84px * 0.8);
-      width: calc(300px * 0.8);
+    height: calc(84px * 0.8);
+    width: calc(300px * 0.8);
+    @media (min-width: 575px) {
+      height: 84px;
+      width: 300px;
     }
     &-img {
       height: 100%;
@@ -79,12 +79,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     width: 216px;
-    @media (max-width: 1199px) {
-      display: none;
+    @media (min-width: 1200px) {
+      display: flex;
     }
   }
   &__social {

@@ -1,5 +1,5 @@
 .hamburger {
-  display: none;
+  display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -9,10 +9,11 @@
   text-transform: none;
   background-color: transparent;
   border: 0;
+  margin-top: 16px;
   margin: 0;
   overflow: visible;
-  @media (max-width: 640px) {
-    margin-top: 16px;
+  @media (min-width: 576px) {
+    margin-top: 0;
   }
   &:hover {
     opacity: 0.6;
@@ -85,11 +86,8 @@
   transform: rotate(-90deg);
 }
 
-@media (max-width: 1140px) {
+@media (min-width: 1200px) {
   .hamburger {
-    display: inline-block;
-    // position: absolute;
-    // top: 0;
-    // right: -10px;
+    display: none;
   }
 }
