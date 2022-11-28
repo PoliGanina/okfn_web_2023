@@ -4,8 +4,6 @@ const sass = require("gulp-sass")(require("sass"));
 const rename = require("gulp-rename");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
-// const imagemin = require("gulp-imagemin");
-// const htmlmin = require("gulp-htmlmin");
 const GulpClient = require("gulp");
 
 // Static server
@@ -43,11 +41,12 @@ gulp.task("watch", function () {
 });
 
 gulp.task("html", function () {
-  return gulp
+  return (
+    gulp
       .src("src/*.html")
       // .pipe(htmlmin({ collapseWhitespace: true }))
       .pipe(gulp.dest("dist/"))
-  ;
+  );
 });
 
 gulp.task("scripts", function () {

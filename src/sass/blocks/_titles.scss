@@ -1,0 +1,17 @@
+.title {
+  font-family: "Miriam Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  &_practice {
+    margin-top: 60px;
+  }
+  &_tools {
+    margin-top: 70px;
+  }
+  &_movement {
+    margin-top: 123px;
+  }
+}

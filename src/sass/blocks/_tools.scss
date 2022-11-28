@@ -1,0 +1,67 @@
+.tools {
+  margin-top: 70px;
+  &__grid {
+    &-item {
+      display: flex;
+      padding: 70px 0;
+      &:not(:last-child) {
+        border-bottom: 0.5px solid #000000;
+      }
+      &:nth-child(1) img {
+        width: 232px;
+        height: 64px;
+      }
+      &:nth-child(2) img {
+        width: 288px;
+        height: 95px;
+      }
+      &:nth-child(3) img {
+        width: 175px;
+        height: 60px;
+      }
+    }
+    &-img {
+      display: block;
+      margin: auto;
+    }
+    &-text {
+      width: 50%;
+    }
+    &-descr {
+      margin-right: 85px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+    &-link {
+      display: block;
+      margin-top: 8px;
+      line-height: 22px;
+      position: relative;
+      font-weight: 700;
+      &:hover,
+      &:active,
+      &:visited {
+        color: #000;
+        text-decoration: none;
+      }
+      &::after {
+        content: "";
+        margin-left: 5px;
+        transition: all 0.5s;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 10px;
+        height: 8px;
+        position: absolute;
+        background-image: url("../assets/2 in practice/arrow-right.svg");
+      }
+      &:hover {
+        &::after {
+          margin-left: 7px;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

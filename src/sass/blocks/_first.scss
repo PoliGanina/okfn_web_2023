@@ -1,4 +1,78 @@
 .first {
   margin-top: 60px;
-  background-color: #fff;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+    @media (min-width: 992px) {
+      width: calc(468px * 0.7);
+      height: calc(468px * 0.7);
+    }
+    @media (min-width: 1200px) {
+      width: 468px;
+      height: 468px;
+    }
+  }
+  &__description {
+    font-family: "Miriam Libre";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #000;
+    @media (min-width: 992px) {
+      flex-direction: column;
+      font-size: 46px;
+      line-height: 55px;
+    }
+    @media (min-width: 1200px) {
+      flex-direction: column;
+      font-size: 46px;
+      line-height: 55px;
+    }
+  }
+  &__values {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-wrap {
+      display: flex;
+      flex-direction: row;
+      @media (min-width: 992px) {
+        flex-direction: column;
+      }
+    }
+    &-img {
+      width: 232px;
+      height: 194px;
+    }
+    &-title {
+      margin-top: 17px;
+      width: 260px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #000000;
+    }
+    &-descr {
+      display: inline-block;
+      height: 114px;
+      width: 300px;
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+  }
 }
