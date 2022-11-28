@@ -6,9 +6,14 @@
     justify-content: space-between;
   }
   &__img {
+    display: block;
     width: 200px;
     height: 200px;
     mix-blend-mode: multiply;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      margin-left: auto;
+    }
     @media (min-width: 992px) {
       width: calc(468px * 0.7);
       height: calc(468px * 0.7);
@@ -24,11 +29,10 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
-
     color: #000;
     @media (min-width: 992px) {
       flex-direction: column;
-      font-size: 46px;
+      font-size: 35px;
       line-height: 55px;
     }
     @media (min-width: 1200px) {
@@ -38,41 +42,76 @@
     }
   }
   &__values {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-width: 768px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 40px;
+    }
+    &:nth-child(even) .first__values-wrap {
+      flex-direction: row;
+    }
+    &:nth-child(even) .first__values-wrap h2 {
+      margin-left: 20px;
+    }
     &-wrap {
       display: flex;
-      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%;
+      &:nth-child(even) {
+        flex-direction: row;
+      }
       @media (min-width: 992px) {
         flex-direction: column;
       }
     }
     &-img {
-      width: 232px;
-      height: 194px;
+      width: 159px;
+      height: 132px;
+      @media (min-width: 992px) {
+        width: 232px;
+        height: 194px;
+      }
     }
     &-title {
-      margin-top: 17px;
-      width: 260px;
+      width: 204px;
       font-weight: 700;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
+      font-size: 19px;
+      line-height: 23px;
+      text-align: left;
       color: #000000;
+      @media (min-width: 576px) {
+        width: 260px;
+      }
+      @media (min-width: 992px) {
+        text-align: center;
+        margin-top: 17px;
+        font-size: 24px;
+        line-height: 29px;
+      }
     }
     &-descr {
       display: inline-block;
-      height: 114px;
-      width: 300px;
-      margin-top: 40px;
+      width: 100%;
+      margin-top: 18px;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-      text-align: center;
+      text-align: left;
       color: #000000;
+      @media (min-width: 992px) {
+        margin-top: 40px;
+        text-align: center;
+        width: 300px;
+        height: 114px;
+      }
     }
   }
 }

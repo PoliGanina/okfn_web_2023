@@ -3,7 +3,12 @@
   &__grid {
     &-item {
       display: flex;
-      padding: 70px 0;
+      flex-direction: column;
+      padding: 50px 0;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        padding: 70px 0;
+      }
       &:not(:last-child) {
         border-bottom: 0.5px solid #000000;
       }
@@ -12,8 +17,12 @@
         height: 64px;
       }
       &:nth-child(2) img {
-        width: 288px;
-        height: 95px;
+        width: 262px;
+        height: 87px;
+        @media (min-width: 576px) {
+          width: 288px;
+          height: 95px;
+        }
       }
       &:nth-child(3) img {
         width: 175px;
@@ -25,20 +34,41 @@
       margin: auto;
     }
     &-text {
-      width: 50%;
+      width: 100%;
+      margin-top: 60px;
+      padding: 0 38px;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        width: 50%;
+        margin-top: 0;
+        padding: 0;
+      }
     }
     &-descr {
-      margin-right: 85px;
       font-size: 16px;
       line-height: 22px;
       color: #000000;
+      @media (min-width: 768px) {
+        margin-right: 20px;
+      }
+      @media (min-width: 1200px) {
+        margin-right: 85px;
+      }
     }
     &-link {
       display: block;
-      margin-top: 8px;
+      align-self: flex-end;
+      transform: translateX(-15px);
+      margin-top: 35px;
       line-height: 22px;
       position: relative;
       font-weight: 700;
+      @media (min-width: 768px) {
+        margin-top: 8px;
+        align-self: flex-start;
+        transform: translateX(0);
+      }
       &:hover,
       &:active,
       &:visited {

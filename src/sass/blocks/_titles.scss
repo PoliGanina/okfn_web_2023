@@ -2,9 +2,16 @@
   font-family: "Miriam Libre";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 50px;
   text-align: center;
+  color: #000;
+  @media (min-width: 992px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 60px;
+  }
   &_practice {
     margin-top: 60px;
   }
