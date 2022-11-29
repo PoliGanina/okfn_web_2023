@@ -159,6 +159,8 @@
     margin-top: 10px;
     position: relative;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
     &:hover,
     &:active,
     &:visited {
@@ -184,8 +186,8 @@
     }
     @media (min-width: 992px) {
       margin-top: 25px;
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
