@@ -68,9 +68,6 @@
       &:nth-child(even) {
         flex-direction: row;
       }
-      @media (min-width: 992px) {
-        flex-direction: column;
-      }
     }
     &-img {
       width: 159px;
@@ -113,5 +110,13 @@
         height: 114px;
       }
     }
+  }
+}
+@media (min-width: 992px) {
+  .first__values:nth-child(even) .first__values-wrap {
+    flex-direction: column;
+  }
+  .first__values:nth-child(odd) .first__values-wrap {
+    flex-direction: column;
   }
 }
