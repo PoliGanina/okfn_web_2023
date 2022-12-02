@@ -6,12 +6,17 @@
 @import "base/variables";
 @import "base/general";
 
+//sections//
 @import "blocks/header";
 @import "blocks/hamburger";
 @import "blocks/first";
-@import "blocks/divider";
-@import "blocks/titles";
 @import "blocks/practice";
 @import "blocks/tools";
 @import "blocks/movement";
 @import "blocks/footer";
+
+//UI kit//
+@import "blocks/divider";
+@import "blocks/titles";
+@import "blocks/buttons";
+@import "blocks/links";
