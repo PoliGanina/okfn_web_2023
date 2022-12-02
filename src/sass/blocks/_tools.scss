@@ -1,4 +1,5 @@
 .tools {
+  position: relative;
   margin-top: 70px;
   &__grid {
     &-item {
@@ -93,6 +94,23 @@
           transition: all 0.5s;
         }
       }
+    }
+  }
+  .circle-orange {
+    position: absolute;
+    left: 0;
+    transform: rotate(180deg);
+    top: -248px;
+    z-index: -1;
+    width: calc(124px * 2);
+    height: calc(248px * 2);
+    @media (min-width: 992px) {
+      display: none;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 }
