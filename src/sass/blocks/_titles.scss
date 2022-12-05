@@ -25,4 +25,13 @@
       width: 233px;
     }
   }
+  &_updates {
+    margin-top: 44;
+    text-align: center;
+    @media (min-width: 992px) {
+      text-align: left;
+      width: 233px;
+      margin-top: 70px;
+    }
+  }
 }

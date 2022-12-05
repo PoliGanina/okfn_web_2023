@@ -97,14 +97,13 @@
       transform: rotate(0deg);
       left: auto;
       right: 0;
-      top: -450px;
-      height: calc(495px * 2);
-      width: calc(248px * 2);
+      top: -350px;
+      height: 700px;
+      width: 448px;
     }
     &-img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
     }
   }
 }
