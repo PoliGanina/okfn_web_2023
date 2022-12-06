@@ -25,4 +25,11 @@
       transform: translateX(0);
     }
   }
+  &_library {
+    margin: 30px auto 0;
+    background-color: #d0ffde;
+    &:hover {
+      background-color: #79f79f;
+    }
+  }
 }
