@@ -34,4 +34,12 @@
       margin-top: 70px;
     }
   }
+  &_newsletter {
+    margin-top: 0;
+    text-align: left;
+
+    @media (min-width: 992px) {
+      width: 233px;
+    }
+  }
 }

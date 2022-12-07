@@ -11,7 +11,7 @@
   transition: all 0.5s;
   &:hover {
     background: rgba(255, 101, 228, 0.5);
-    transition: all 0.5s;
+    transition: background 0.5s;
   }
   &_movement {
     margin: 25px auto 0;
@@ -27,9 +27,18 @@
   }
   &_library {
     margin: 30px auto 0;
-    background-color: #d0ffde;
+    background: #d0ffde;
     &:hover {
-      background-color: #79f79f;
+      background: #79f79f;
+    }
+  }
+  &_newsletter {
+    margin-top: 25px;
+    width: 212px;
+    height: 47px;
+    background: rgba(0, 209, 255, 0.2);
+    &:hover {
+      background: rgba(0, 209, 255, 0.9);
     }
   }
 }

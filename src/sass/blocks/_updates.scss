@@ -1,5 +1,9 @@
 .updates {
   position: relative;
+  margin-top: 60px;
+  @media (min-width: 992px) {
+    margin-top: 150px;
+  }
   .circle-green {
     position: absolute;
     transform: rotate(180deg);
