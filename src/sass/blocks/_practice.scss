@@ -26,8 +26,12 @@
       width: 220px;
       height: 255px;
       background: #ff9636;
-      opacity: 0.9;
+      opacity: 0.8;
+      transition: opacity 0.3s;
       border-radius: 30px;
+      &:hover {
+        opacity: 0.9;
+      }
       @media (min-width: 576px) {
         width: calc(220px * 1.5);
         height: calc(255px * 1.5);
@@ -78,7 +82,11 @@
       height: 194px;
       background: #ff65e4;
       opacity: 0.8;
+      transition: opacity 0.3s;
       border-radius: 30px;
+      &:hover {
+        opacity: 0.9;
+      }
       @media (min-width: 576px) {
         width: calc(302px * 1.5);
         height: calc(194px * 1.5);
@@ -119,8 +127,12 @@
       width: 300px;
       height: 222px;
       background: #2b00fa;
-      opacity: 0.9;
+      opacity: 0.8;
+      transition: opacity 0.3s;
       border-radius: 30px;
+      &:hover {
+        opacity: 0.9;
+      }
       @media (min-width: 576px) {
         width: calc(300px * 1.5);
         height: calc(222px * 1.5);
