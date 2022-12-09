@@ -38,7 +38,7 @@ if (vw >= 100) {
   setTimeout(() => {
     gsap.to(".carousel__inner", {
       x: `-${carouselWidth}px`,
-      duration: 15,
+      duration: 40,
       ease: "none",
       repeat: -1,
     });
