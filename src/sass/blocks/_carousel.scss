@@ -7,7 +7,7 @@
   }
   &__inner {
     display: flex;
-    animation: carousel 10s infinite linear;
+    width: fit-content;
   }
   &__item {
     display: flex;
@@ -18,6 +18,10 @@
     &:nth-child(odd) .carousel__img {
       width: 357.23px;
       height: 209.93px;
+      @media (min-height: 768px) {
+        width: calc(941px * 0.6);
+        height: calc(553px * 0.6);
+      }
       @media (min-height: 992px) {
         width: 941px;
         height: 553px;
@@ -26,6 +30,10 @@
     &:nth-child(even) .carousel__img {
       width: 291.93px;
       height: 171.59px;
+      @media (min-height: 768px) {
+        width: calc(769px * 0.6);
+        height: calc(452px * 0.6);
+      }
       @media (min-height: 992px) {
         width: 769px;
         height: 452px;
@@ -44,17 +52,5 @@
     margin-top: 20px;
     font-size: 16px;
     line-height: 22px;
-  }
-}
-
-@keyframes carousel {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }

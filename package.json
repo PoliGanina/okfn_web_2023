@@ -24,6 +24,7 @@
     "sass": "^1.0.0"
   },
   "dependencies": {
+    "gsap": "^3.11.3",
     "gulp-imagemin": "^7.1.0",
     "gulp-update": "^0.0.2"
   },
